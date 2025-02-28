@@ -25,21 +25,37 @@
     a:visited{color:rgb(245, 127, 147)}
     a:hover{color:rgb(128, 221, 128); font-size: larger;}
     a:active{color:rgb(95, 214, 225)}
+
+    h4.hidden{display: none;}
+    h5.hidden{visibility: hidden;}
+
+    table, th, td {border: 3px solid rgba(76, 16, 131, 1.0);
+                   border-collapse: collapse;
+                }
+    th, td {padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+            }
+    tr:hover {background-color: #c8e688;
+            }
+
 </style>
 </head>
 <body>
     <header>
-        <h1 style="font-size: 50px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">Dog's Best Friend Petsitting</h1>
-        <h2 style="font-size: 40px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">Cats Welcome</h2>
+        <h1 style="font-size: 50px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">&#x1F436;Dog's Best Friend Petsitting&#x1F436;</h1>
+        <h2 style="font-size: 40px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">&#128049;Cats Welcome&#128049;</h2>
+        <h3> A header using h3 in order to fulfill rubric</h3>
     </header>
-    <h3><div id="navcontainer">
+    <div id="navcontainer">
         <article class="nav"><a href="index.html">Home</a></article>
         <article class="nav"><a href="service.html">Services</a></article>
         <article class="nav"><a href="calendar.html">Calendar</a></article>
         <article class="nav"><a href="gallery.html">Gallery</a></article>
         <article class="nav"><a href="reviews.html">Reviews</a></article>
-        <article class="FAQs"abbr title="Under Construction">(FAQs?)</article>
-    </div></h3>
+        <article class="FAQs"abbr title="Under Construction">(FAQs)</article>
+    </div>
     <div id="maincontainer">
         <p article class="p1" style="font-size: 40px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">About Me
         </p>
@@ -83,9 +99,62 @@
                           abbr title="Dean">
                 </map>   
     </div>
-    <h3><div id="navcontainer">
-        <article class="footer"><abbr title="Under Construction">Contact Me</article>
-        <article class="footer"><abbr title="Under Construction">Find Me</article>
-    </div></h3>
+
+    <h4 class="hidden">This header is hidden.</h4>
+    <h5 class="hidden">This header is also hidden.</h4>
+    
+    <table style="width:fit-content"><caption><h3>Pricing</h3></caption>
+        <tr>
+            <th></th>
+            <th>Dogs</th>
+            <th>Cats</th>
+            <th>Other</th>
+        </tr>
+        <tr>
+            <th>Overnight</th>
+            <td>$35</td>
+            <td>$30</td>
+            <td>$25</td>
+        </tr>
+        <tr>
+            <th>30 Min Walk</th>
+            <td>$25</td>
+            <td>Probably Not</td>
+            <td>Probably Not</td>
+        </tr>
+        <tr>
+            <th>30 Min Potty Break/<br>Scoop Litter</br></th>
+            <td>$20</td>
+            <td>$20</td>
+            <td>$15 Cage Clean?</td>
+        </tr>
+        <tr>
+            <th>Feed/Water Only<br>Check in</br></th>
+            <td>$25</td>
+            <td>$20</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <th>Medications</th>
+            <td>$10</td>
+            <td>$10</td>
+            <td>$10</td>
+        </tr>
+    </table>
+
+    <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/nYcHi9EgUHs?si=vmAfWObFyupekXow" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+
+    <footer>
+        <abbr title="Under Construction">Contact Me
+        <abbr title="Under Construction">Socials
+    </footer>
 </body>
 </html>
