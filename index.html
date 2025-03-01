@@ -4,7 +4,7 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
  <title>Welcome</title>
-  <meta name="keywords" content="Petsitting Service San Antonio Texas">
+  <meta name="keywords" content="Pet Sitting Service San Antonio Texas">
   <meta name="author" content="Meg Geddie">
   <meta name= "viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
@@ -15,11 +15,16 @@
 
 <style>
     body {background-image: url(images/petsitsitebackground.jpg); background-size: cover;
-          h1, h2, h3 {text-align: center; 
-                      color:rgba(76, 16, 131, 1.0);
-                      display: flex; 
-                      justify-content: center;
-                     }
+    h1, h2 {text-align: center; 
+                color:rgba(76, 16, 131, 1.0);
+                display: flex; 
+                justify-content: center;
+                }
+    h3 {text-align: center; 
+        display: flex; 
+        justify-content: center;
+        font-family: "Marhey";
+        }
          }
     a:link{color:antiquewhite}
     a:visited{color:rgb(245, 127, 147)}
@@ -39,23 +44,23 @@
             }
     tr:hover {background-color: #c8e688;
             }
-
 </style>
 </head>
 <body>
     <header>
-        <h1 style="font-size: 50px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">&#x1F436;Dog's Best Friend Petsitting&#x1F436;</h1>
+        <h1 style="font-size: 50px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">&#x1F436;Dog's Best Friend Pet Sitting&#x1F436;</h1>
         <h2 style="font-size: 40px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">&#128049;Cats Welcome&#128049;</h2>
-        <h3> A header using h3 in order to fulfill rubric</h3>
     </header>
-    <div id="navcontainer">
-        <article class="nav"><a href="index.html">Home</a></article>
-        <article class="nav"><a href="service.html">Services</a></article>
-        <article class="nav"><a href="calendar.html">Calendar</a></article>
-        <article class="nav"><a href="gallery.html">Gallery</a></article>
-        <article class="nav"><a href="reviews.html">Reviews</a></article>
-        <article class="FAQs"abbr title="Under Construction">(FAQs)</article>
+
+    <div id="navcontainer1">
+        <article class="nav"><a href="index.html"><h3>Home</h3></a></article>
+        <article class="nav"><a href="service.html"><h3>Services</h3></a></article>
+        <article class="nav"><a href="calendar.html"><h3>Calendar</h3></a></article>
+        <article class="nav"><a href="gallery.html"><h3>Gallery</h3></a></article>
+        <article class="nav"><a href="reviews.html"><h3>Reviews</h3></a></article>
+        <article class="nav"abbr title="Under Construction"><h3>FAQs</h3></article>
     </div>
+
     <div id="maincontainer">
         <p article class="p1" style="font-size: 40px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)">About Me
         </p>
@@ -100,10 +105,11 @@
                 </map>   
     </div>
 
+    <p>Some hidden things to fulfill rubric:
     <h4 class="hidden">This header is hidden.</h4>
-    <h5 class="hidden">This header is also hidden.</h4>
+    <h5 class="hidden">This header is also hidden.</h4></p>
     
-    <table style="width:fit-content"><caption><h3>Pricing</h3></caption>
+    <p><table style="width:fit-content"><caption><h3>Pricing</h3></caption>
         <tr>
             <th></th>
             <th>Dogs</th>
@@ -140,9 +146,28 @@
             <td>$10</td>
             <td>$10</td>
         </tr>
-    </table>
+    </table></p>
 
-    <iframe width="560" 
+    <p>A Checklist:
+    <ul style="list-style-type:circle;">
+        <li>Vet Info</li>
+        <li>Emergency Contact</li>
+        <li>Food</li>
+        <li>Water</li>
+        <li>Medications</li>
+        <li>Potty</li>
+        <li>Exercise/Play</li>
+        <li>Sleeping</li>
+    </ul></p>
+
+    <p>Good Boys: Helping me fulfill rubric
+    <ul style="list-style-type:square;">
+        <li>Scooby</li>
+        <li>Snoopy</li>
+        <li>Pluto</li>
+    </ul></p>
+
+    <p><iframe width="560" 
             height="315" 
             src="https://www.youtube.com/embed/nYcHi9EgUHs?si=vmAfWObFyupekXow" 
             title="YouTube video player" 
@@ -150,7 +175,11 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen>
-    </iframe>
+    </iframe></p>
+
+    <p><button type="button" onclick="myFunction()">Click Me!</button></p>
+    <p id="catscript">dogs rule and cats drool!</id></p>
+    <script>function myFunction() {document.getElementById("catscript").innerHTML="CATS RULE AND DOGS DROOL!";}</script>
 
     <footer>
         <abbr title="Under Construction">Contact Me
