@@ -1,6 +1,5 @@
 @charset "UTF-8"
-* {box-sizing: border-box;
-       }
+
 .marhey-marheyfont{
        font-family: "Marhey", serif;
        font-optical-sizing: auto;
@@ -8,10 +7,10 @@
        font-style: normal;
        }
           
-#navcontainer1 article{
+#navcontainer article{
        background-color:rgba(76, 16, 131, 0.5);
        width: 90px;
-       height: 40px;
+       height: 30px;
        margin: 10px 50px;
        border-radius: 25px;
        padding: 10px;
@@ -19,10 +18,5 @@
        border-width: 3px;
        border-color:rgb(76, 16, 131);
        text-align: center;
-       float: left;
        color:antiquewhite;
        }
-.maincontainer{display: flex; width: 100%;
-       }
-
-                                
