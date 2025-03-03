@@ -1,17 +1,40 @@
 @charset "UTF-8"
-
+*{
+       box-sizing: border-box;
+}
+body{
+       background: url("images/petsitsitebackground.jpg");
+}
 .marhey-marheyfont{
        font-family: "Marhey", serif;
        font-optical-sizing: auto;
        font-weight: 300;
        font-style: normal;
-       }
-          
-#navcontainer article{
+}
+#container{
+       width: 1000px; 
+       margin: 0 auto;
+       height: 100%;
+}
+header{
+       height: 200px;
+       width: 100%;
+       text-align: center;
+       color: rgba(76, 16, 131, 1.0);
+}
+nav{
+       height: 75px;
+       width: 100%;
+}
+h3 {
+       font-family: "Marhey";
+       color: rgba(76, 16, 131, 1.0);
+}
+.navhome{
        background-color:rgba(76, 16, 131, 0.5);
        width: 90px;
        height: 30px;
-       margin: 10px 50px;
+       margin: 10px 25px;
        border-radius: 25px;
        padding: 10px;
        border-style: solid;
@@ -19,4 +42,180 @@
        border-color:rgb(76, 16, 131);
        text-align: center;
        color:antiquewhite;
-       }
+       float: left;
+}
+.navservice{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+       float: left;
+}
+.navcalendar{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+       float: left;
+}
+.navgallery{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+       float: left;
+}
+.navreviews{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+       float: left;
+}
+.navFAQs{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+       float: left;
+}
+.mainleft{
+       width: 380px;
+       height: 100%;
+       background-color: rgba(255, 255, 255, 0.5);
+       border-radius: 20px;
+       float: left;
+       margin: 20px 30px 20px 0px;
+       padding: 30px;
+}
+.mainright{
+       width: 380px;
+       height: 100%;
+       border-radius: 20px;
+       float: left;
+       margin: 20px 30px 20px 0px;
+       padding: 30px;
+
+}
+.hidedemo{
+       width: 380px;
+       height: 100%;
+       border-radius: 20px;
+       float: left;
+       margin: 10px 30px 20px 0px;
+       padding: 10px;
+       background-color: rgba(255, 255, 255, 0.5);
+       text-align: center;
+       font-size: 50px
+}
+p.hidden1{display: none;}
+p.hidden2{visibility: hidden;}
+.listsdemo{
+       width: 380px;
+       height: 100%;
+       background-color: rgba(255, 255, 255, 0.5);
+       border-radius: 20px;
+       float: left;
+       padding: 15px;
+}
+.tabledemo{
+       clear: both;    
+}
+table, th, td {
+       border: 3px solid rgba(76, 16, 131, 1.0);
+       border-collapse: collapse;
+}
+th, td {
+       padding-top: 10px;
+       padding-bottom: 20px;
+       padding-left: 30px;
+       padding-right: 40px;
+}
+tr:hover {
+       background-color: #c8e688;
+}
+.javademo{
+       width: 380px;
+       height: 100%;
+       background-color: rgba(255, 255, 255, 0.5);
+       border-radius: 20px;
+       float: left;
+       margin: 20px 30px 20px 0px;
+       padding: 30px;
+       clear: both;
+       text-align: center;
+}
+.iframedemo{
+       width: fit-content;
+       height: 100%;
+       background-color: rgba(255, 255, 255, 0.5);
+       border-radius: 20px;
+       float: left;
+       margin: 20px 30px 20px 0px;
+       padding: 30px;
+       clear: both;
+}
+footer{
+       clear: both;
+}
+.contact{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+}
+.socials{
+       background-color:rgba(76, 16, 131, 0.5);
+       width: 90px;
+       height: 30px;
+       margin: 10px 25px;
+       border-radius: 25px;
+       padding: 10px;
+       border-style: solid;
+       border-width: 3px;
+       border-color:rgb(76, 16, 131);
+       text-align: center;
+       color:antiquewhite;
+}
