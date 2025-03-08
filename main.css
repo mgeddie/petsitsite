@@ -3,7 +3,7 @@
        box-sizing: border-box;
 }
 body{
-       background: url("images/petsitsitebackground.jpg");
+       background: url("images/petsitsitebackground.jpg"); background-size: cover;
 }
 .marhey-marheyfont{
        font-family: "Marhey", serif;
@@ -22,113 +22,90 @@ header{
        text-align: center;
        color: rgba(76, 16, 131, 1.0);
 }
-nav{
-       height: 75px;
-       width: 100%;
-}
 h3 {
        font-family: "Marhey";
        color: rgba(76, 16, 131, 1.0);
-}
-.navhome{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
-       padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
        text-align: center;
-       color:antiquewhite;
+}
+a:link{color:rgb(0, 0, 0)}
+a:visited{color:rgb(57, 57, 57)}
+a:active{color:rgb(255, 255, 255)}
+ul{
+       list-style-type: none; 
+       margin: 0; 
+       padding: 0;
+       overflow: hidden;
+       background-color: rgba(75, 16, 131, 0.15);
+       border-radius: 5px;
+}
+li{
        float: left;
 }
-.navservice{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
-       padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
-       text-align: center;
+li a{
+       display: block;
        color:antiquewhite;
-       float: left;
-}
-.navcalendar{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
-       padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
        text-align: center;
-       color:antiquewhite;
-       float: left;
+       padding: 20px;
+       text-decoration: none;
 }
-.navgallery{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
-       padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
+li a:hover{
+       background-color: rgba(76, 16, 131, .05);
+       font-size: large;
+}
+.active{
+       background-color: rgba(76, 16, 131, 1.0);
+}
+li a:hover:not(.active){
+       background-color: rgba(76, 16, 131, 0.15);
+}
+li a, .dropbtn{
+       display: inline-block;
+       color: rgba(76, 16, 131, 0.5);
        text-align: center;
-       color:antiquewhite;
-       float: left;
+       padding: 14px 16px;
+       text-decoration: none;
 }
-.navreviews{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
-       padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
+li a:hover, .dropdown:hover .dropbtn{
+       background-color: rgba(76, 16, 131, 0.15);
+     }
+li.dropdown{
+       display: inline-block;
+     }
+.dropdown-content{
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       min-width: auto;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+     }
+.dropdown-content a {
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
        text-align: center;
-       color:antiquewhite;
-       float: left;
-}
-.navFAQs{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
-       padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
-       text-align: center;
-       color:antiquewhite;
-       float: left;
-}
+     }
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+       display: block;
+     }
+
 .mainleft{
        width: 380px;
        height: 100%;
        background-color: rgba(255, 255, 255, 0.5);
        border-radius: 20px;
        float: left;
-       margin: 20px 30px 20px 0px;
+       margin: 20px 10px 10px 0px;
        padding: 30px;
 }
 .mainright{
        width: 380px;
        height: 100%;
        border-radius: 20px;
-       float: left;
-       margin: 20px 30px 20px 0px;
+       float: right;
+       margin: 20px 10px 10px 0px;
        padding: 30px;
 
 }
@@ -136,7 +113,7 @@ h3 {
        width: 380px;
        height: 100%;
        border-radius: 20px;
-       float: left;
+       clear: both;
        margin: 10px 30px 20px 0px;
        padding: 10px;
        background-color: rgba(255, 255, 255, 0.5);
@@ -145,14 +122,6 @@ h3 {
 }
 p.hidden1{display: none;}
 p.hidden2{visibility: hidden;}
-.listsdemo{
-       width: 380px;
-       height: 100%;
-       background-color: rgba(255, 255, 255, 0.5);
-       border-radius: 20px;
-       float: left;
-       padding: 15px;
-}
 .tabledemo{
        clear: both;    
 }
@@ -192,30 +161,97 @@ tr:hover {
 }
 footer{
        clear: both;
+       background-color: rgba(255, 255, 255, 0.5);
 }
-.contact{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
+
+#lform{
+       width: 400px; 
+       background-color: rgba(255, 255, 255, 0.5); 
        padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
-       text-align: center;
-       color:antiquewhite;
+       margin: 10px;
+       border-radius: 10px;
+       float: left;
 }
-.socials{
-       background-color:rgba(76, 16, 131, 0.5);
-       width: 90px;
-       height: 30px;
-       margin: 10px 25px;
-       border-radius: 25px;
+#rform{
+       width: 400px; 
+       background-color: rgba(255, 255, 255, 0.5); 
        padding: 10px;
-       border-style: solid;
-       border-width: 3px;
-       border-color:rgb(76, 16, 131);
-       text-align: center;
-       color:antiquewhite;
+       margin: 10px;
+       border-radius: 10px;
+       float: right;
+}
+
+input[type=text]{
+       width: 100%;
+       padding: 5px;
+       margin: 5px;
+       box-sizing: border-box;
+       border: none;
+       border-radius: 5px;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+       background-color: rgba(76, 16, 131, 0.10);
+       color: rgb(0, 0, 0);
+}
+input[type=text]:focus {
+       background-color: rgb(173, 230, 212);
+     }
+
+input[type=email]{
+       width: 100%;
+       padding: 5px;
+       margin: 5px;
+       box-sizing: border-box;
+       border: none;
+       border-radius: 5px;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+       background-color: rgba(76, 16, 131, 0.10);
+       color: rgb(0, 0, 0);
+}
+input[type=email]:focus {
+       background-color: rgb(173, 230, 212);
+     }
+
+textarea{
+       padding: 5px;
+       width: 100%;
+       border: none;
+       border-radius: 5px;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+       background-color: rgba(76, 16, 131, 0.10);
+       color: rgb(0, 0, 0);
+       resize: none;
+ }
+
+<!--Not sure why this doesn't work?-->
+input[type=textarea]:focus {
+       background-color: rgb(173, 230, 212);
+     }
+
+select {
+       width: 100%;
+       padding: 5px;
+       border: none;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+       border-radius: 5px;
+       background-color: rgba(75, 16, 131, 0.15)
+     }
+
+input[type=button], input[type=submit], input[type=reset] {
+       background-color: rgba(75, 16, 131, 0.25);
+       border: none;
+       border-radius: 5px;
+       color: rgba(75, 16, 131, 1.0);
+       padding: 15px 30px;
+       text-decoration: none;
+       margin: 5px;
+       cursor: pointer;
+     }
+
+#sounddemo{
+       width: 300px; 
+       background-color: rgba(255, 255, 255, 0.5); 
+       padding: 10px;
+       margin: 50px 50px 50px 150px;
+       border-radius: 10px;
+       float: left;
 }

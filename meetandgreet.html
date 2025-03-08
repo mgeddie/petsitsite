@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <title>Welcome</title>
+  <meta name="keywords" content="Pet Sitting Service San Antonio Texas">
+  <meta name="author" content="Meg Geddie">
+  <meta name= "viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+<style></style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1 style="font-size: 50px; font-family: Marhey, serif;">&#x1F436;Dog's Best Friend Pet Sitting&#x1F436;</h1>
+        <h2 style="font-size: 40px; font-family: Marhey, serif;">&#128049;Cats Welcome&#128049;</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li class="dropdown">
+                <a href="calendar.html" class="dropbtn">Calendar</a>
+                    <div class="dropdown-content">
+                        <a href="meetandgreet.html">Meet & Greet</a>
+                    </div></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+  
+    <h3>Before We Meet and Greet: Tell Me More</h3>
+
+    <div id=lform>
+    <form action="/action_page.php">
+
+    <label for="fname">Owner First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Vanessa"required><br>
+    <label for="lname">Owner Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Richardson"required><br>
+    <label for="phone">Phone Numbe:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]3[0-9]3[0-9]4" required><br>
+    <label for="addr">Address:</label><br>
+    <input type="text" id="addr" name="addr" value="3535 N Ellison Dr."required><br>
+    <label for="citystatezip">City, State, Zip Code:</label><br>
+    <input type="text" id="citystatezip" name="citystatezip" value="San Antonio, TX 78251"required><br>
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" name="email" value="vr@gmail.com" required><br><br><br>
+
+    <label for="dr">Veterinarian:</label><br>
+    <input type="text" id="vetinfo" name="vetinfo" value="Dr. James Herriot"><br>
+    <label for="vetinfo">Hospital:</label><br>
+    <input type="text" id="vetinfo" name="vetinfo" value="All Creatures Great and Small"><br>
+    <label for="vetphone ">Vet Phone:</label><br>
+    <input type="text" id="vetphone" name="vetphone" placeholder="123-456-7890" pattern="[0-9]3[0-9]3[0-9]4"><br><br><br>
+      
+    <label for="emergcon">Emergency Contact:</label><br>
+    <input type="text" id="emergcon" name="emergcon" value="Charlie Brown"><br>
+    <label for="ecphone ">Phone:</label><br>
+    <input type="text" id="ecphone" name="ecphone" placeholder="123-456-7890" pattern="[0-9]3[0-9]3[0-9]4"><br><br><br>    
+        
+    <label for="dogs">Select how many dogs you have:</label>
+    <select id="dogs" name="dogs">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option><br><br>
+    </select><br><br>
+    <label for="cats">Select how many cats you have:</label>
+    <select id="cats" name="cats">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option><br><br>
+    </select><br><br>  
+    
+    Are any of your pets on medication?<br>(Other than flea/tick/heartworm monthly)<br><br>
+    <input type="radio" id="yes" name="onmeds" value="Yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="No" name="offmeds" value="No">
+    <label for="No">No</label><br><br>
+
+    Would you like me to:<br>
+    Select all that apply<br><br>
+    <input type="checkbox" id="trash" name="trash" value="trash">
+        <label for="trash"> Take out trash?</label><br>
+        <input type="checkbox" id="plants" name="plants" value="plants">
+        <label for="plants"> Water any plants?</label><br>
+        <input type="checkbox" id="mail" name="mail" value="mail">
+        <label for="mail"> Check Your Mail?</label><br><br>
+
+    <input type="submit" value="Submit">
+    </form> 
+    </div>
+
+    <div id="rform">
+    <form action="/action_page.php">
+        
+        <label for="pname">What is your pet's name?</label><br>
+        <input type="text" id="pname" name="pname" value="Scooby"required><br><br>
+        Tell me about your pet:<br>
+        <textarea name="message" rows="10" cols="50">Scooby gets really nervous but responds well to snacks.</textarea><br><br>
+        
+        <label for="addpet">Additional Pet:</label><br>
+        <input type="text" id="addpet" name="addpet" value="Snoopy"required><br><br>
+        Tell me about your pet:<br>
+        <textarea name="message" rows="10" cols="50">Snoopy loves listening to jazz music.</textarea><br><br>
+    
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+    
+    <div id="sounddemo">
+    Sound Demo:
+        <audio controls>
+        <source src="sounds/dog_barking_in_park_ (1).mp3" type="audio/ogg">
+        <source src="sounds/dog_barking_in_park_ (1).mp3" type="audio/mpeg">
+      </audio>   
+    </div>
+
+    <footer>
+        footer under construction
+    </footer>
+</div>
+</body>
+</html>
