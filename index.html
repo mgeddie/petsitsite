@@ -11,10 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
-<style></style>
 </head>
 <body>
-<div id="container">
+<div class="container">
     <header>
         <h1 style="font-size: 50px; font-family: Marhey, serif;">&#x1F436;Dog's Best Friend Pet Sitting&#x1F436;</h1>
         <h2 style="font-size: 40px; font-family: Marhey, serif;">&#128049;Cats Welcome&#128049;</h2>
@@ -23,16 +22,22 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="service.html">Services</a></li>
+
             <li class="dropdown">
                 <a href="calendar.html" class="dropbtn">Calendar</a>
-                    <div class="dropdown-content">
-                        <a href="meetandgreet.html">Meet & Greet</a>
-                    </div></li>
+                <div class="dropdown-content">
+                    <a href="calendar.html">Check Availability</a>
+                    <a href="meetandgreet.html">Schedule a Meet & Greet</a>
+                </div>
+              </li>
+
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
         </ul>
     </nav>
-    <section class="mainleft">
+<div class="flexconhome">
+<section class="mainleft">
     <p style="font-size: 30px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)"><b>About Me</b></p>
     <p style="font-size: 25px; font-family: Marhey, serif;"><i>Hello and welcome!</i></p>
     <p style="font-size: 20px;">
@@ -45,7 +50,7 @@
             I regularly check in with texts and photos so you can see how your pet is doing.
             My goal is to give your pets the same loving treatment as you do.</p>
     </section>
-    <section class="mainright">
+<section class="mainright">
        <img src="images/petsitsiteladyandme_02.jpg" 
          alt="Dog and girl in car." 
          abbr title="Lady and Me"; 
@@ -72,69 +77,9 @@
                           href="https://en.wikipedia.org/wiki/Dean_Winchester" 
                           abbr title="Dean"></map>
     </section>
-    <section class="hidedemo">
-        <p>&#128584;</p>
-        <p class="hidden1">&#128062;&#128062;&#128062;&#128062;</p>
-        <p class="hidden2">&#128008;</p>
-    </section>  
-    <section class="tabledemo"><table style="width:fit-content;"><caption><h3>Pricing</h3></caption>
-        <tr>
-            <th></th>
-            <th>Dogs</th>
-            <th>Cats</th>
-            <th>Other</th>
-        </tr>
-        <tr>
-            <th>Overnight</th>
-            <td>$35</td>
-            <td>$30</td>
-            <td>$25</td>
-        </tr>
-        <tr>
-            <th>30 Min Walk</th>
-            <td>$25</td>
-            <td>Probably Not</td>
-            <td>Probably Not</td>
-        </tr>
-        <tr>
-            <th>30 Min Potty Break/<br>Scoop Litter</br></th>
-            <td>$20</td>
-            <td>$20</td>
-            <td>$15 Cage Clean?</td>
-        </tr>
-        <tr>
-            <th>Feed/Water Only<br>Check in</br></th>
-            <td>$25</td>
-            <td>$20</td>
-            <td>$10</td>
-        </tr>
-        <tr>
-            <th>Medications</th>
-            <td>$10</td>
-            <td>$10</td>
-            <td>$10</td>
-        </tr>
-        </table>
-    </section>
-    <section class="javademo">
-        <button type="button" onclick="myFunction()">Click Me!</button>
-        <p id="catscript">dogs rule and cats drool!</p>
-        <script>function myFunction() {document.getElementById("catscript").innerHTML="CATS RULE AND DOGS DROOL!";}
-        </script>
-    </section>
-    <section class="iframedemo">
-        <iframe width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/nYcHi9EgUHs?si=vmAfWObFyupekXow" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </section>
-    <footer>
-        footer under construction
+</div>
+<footer>
+        Copyright: Meg Geddie
     </footer>
 </div>
 </body>

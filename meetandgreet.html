@@ -3,18 +3,38 @@
 <head>
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
- <title>Welcome</title>
-  <meta name="keywords" content="Pet Sitting Service San Antonio Texas">
+ <title>Schedule Meet and Greet</title>
+  <meta name="keywords" content="Pet Sitting Service San Antonio Texas Calendar Schedule Meet Greet Availability">
   <meta name="author" content="Meg Geddie">
   <meta name= "viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
-<style></style>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+  <script>
+    $( function() {
+      $( "#leavedatepicker" ).datepicker();
+      $( "#anim" ).on( "change", function() {
+        $( "#datepicker" ).datepicker( "option", "slideDown", $( this ).val() );
+      });
+    } );
+    $( function() {
+      $( "#returndatepicker" ).datepicker();
+      $( "#anim" ).on( "change", function() {
+        $( "#datepicker" ).datepicker( "option", "slideDown", $( this ).val() );
+      });
+    } );
+    </script>
+
 </head>
 <body>
-<div id="container">
+<div class="container">
     <header>
         <h1 style="font-size: 50px; font-family: Marhey, serif;">&#x1F436;Dog's Best Friend Pet Sitting&#x1F436;</h1>
         <h2 style="font-size: 40px; font-family: Marhey, serif;">&#128049;Cats Welcome&#128049;</h2>
@@ -23,18 +43,16 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="service.html">Services</a></li>
-            <li class="dropdown">
-                <a href="calendar.html" class="dropbtn">Calendar</a>
-                    <div class="dropdown-content">
-                        <a href="meetandgreet.html">Meet & Greet</a>
-                    </div></li>
+            <li><a href="calendar.html">Calendar</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
         </ul>
     </nav>
-  
+    <div class="flexconmeetgreet">
+    <p>Select Date: <input type="text" id="leavedatepicker" size="15"></p>
     <h3>Before We Meet and Greet: Tell Me More</h3>
-
+    
     <div id=lform>
     <form action="/action_page.php">
 
@@ -114,16 +132,11 @@
     </form>
     </div>
     
-    <div id="sounddemo">
-    Sound Demo:
-        <audio controls>
-        <source src="sounds/dog_barking_in_park_ (1).mp3" type="audio/ogg">
-        <source src="sounds/dog_barking_in_park_ (1).mp3" type="audio/mpeg">
-      </audio>   
-    </div>
+    
 
+</div>
     <footer>
-        footer under construction
+        Copyright: Meg Geddie
     </footer>
 </div>
 </body>
