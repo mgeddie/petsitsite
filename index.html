@@ -9,78 +9,92 @@
   <meta name= "viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <script>
+        const x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success, error);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function success(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        
+        function error() {
+          alert("Sorry, no position available.");
+        }
+    </script>
+
 </head>
 <body>
-<div class="container">
+<div class="pagecontainer">
     <header>
-        <h1 style="font-size: 50px; font-family: Marhey, serif;">&#x1F436;Dog's Best Friend Pet Sitting&#x1F436;</h1>
-        <h2 style="font-size: 40px; font-family: Marhey, serif;">&#128049;Cats Welcome&#128049;</h2>
+        <h1 style="font-size: 100px; font-family: dynapuff, serif;">Happy Tails</h1>
+        <h2 style="font-size: 50px; font-family: Atkinson Hyperlegible Mono, sans-serif;">PET SITTING</h2>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="service.html">Services</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="service.html">SERVICES</a></li>
 
             <li class="dropdown">
-                <a href="calendar.html" class="dropbtn">Calendar</a>
+                <a href="calendar.html" class="dropdown">AVAILABILITY</a>
                 <div class="dropdown-content">
-                    <a href="calendar.html">Check Availability</a>
-                    <a href="meetandgreet.html">Schedule a Meet & Greet</a>
+                    <a href="calendar.html">See Availability</a>
+                    <a href="meetandgreet.html">Schedule Meet & Greet</a>
                 </div>
               </li>
 
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
             <li><a href="FAQs.html">FAQs</a></li>
         </ul>
     </nav>
-<div class="flexconhome">
-<section class="mainleft">
-    <p style="font-size: 30px; font-family: Marhey, serif; color:rgba(76, 16, 131, 1.0)"><b>About Me</b></p>
-    <p style="font-size: 25px; font-family: Marhey, serif;"><i>Hello and welcome!</i></p>
-    <p style="font-size: 20px;">
-            I give traveling pet owners in the San Antonio area peace of mind by staying overnight in your home in order to stick to your pets' normal routine. 
-            My name is Meg and I've been petsitting in San Antonio for around 11 years. 
-            I have 7 years working in an animal hopsital kennel. 
-            I grew up with my first dog, Brownie and now I have 2 cats.
-            I follow all your pets' dietary, exercise and medical routines. 
-            I'm available for overnight stays in your home and I'm never gone for more than a typical work day.
-            I regularly check in with texts and photos so you can see how your pet is doing.
-            My goal is to give your pets the same loving treatment as you do.</p>
+<div class="homecon">
+    <section class="Lady">
+        <img src="images/petsitsiteladyandme_02.jpg" 
+          alt="Dog and girl in car." 
+          abbr title="Lady and Me"; 
+          width="100%">
     </section>
-<section class="mainright">
-       <img src="images/petsitsiteladyandme_02.jpg" 
-         alt="Dog and girl in car." 
-         abbr title="Lady and Me"; 
-         width="100%">
-    <a href="gallery.html">
-        <img src="images/georgefeeney_02.jpg" 
-             alt="2 cats looking out window." 
-             abbr title="Click to meet my cats."; 
-             width="100%"></a>
-    <img src="images/samanddeanholiday_01.jpg" 
-         alt="Girl holding 2 Guinea pigs in front of Christmas tree." 
-         abbr title="Click each Guniea pig to learn their namesakes." 
-         width="400px"
-         usemap="#pigmap">
-            <map name="pigmap">
-                    <area shape="rect" 
-                          coords="114,170,223,246" 
-                          alt="Sam" 
-                          href="https://en.wikipedia.org/wiki/Sam_Winchester" 
-                          abbr title="Sam">
-                    <area shape="rect" 
-                          coords="225,138,330,225" 
-                          alt="Dean" 
-                          href="https://en.wikipedia.org/wiki/Dean_Winchester" 
-                          abbr title="Dean"></map>
+    <section class="AboutMe">
+        <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">About Me</h2>
+        <h3 style="font-size: 20px; font-family: Atkinson Hyperlegible Mono, sans-serif;"><i>Hello and welcome!</i></h3>
+        <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi temporibus cupiditate necessitatibus fugiat accusantium ad illo ratione odit et, doloremque mollitia eveniet tempora labore eius consequatur nobis sed nam placeat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit modi, recusandae atque laudantium repellat illum quod, suscipit in labore omnis minus. Ad fuga quia impedit illo veniam adipisci, minus magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit accusantium, quaerat libero voluptates dolorum excepturi dignissimos. Blanditiis, voluptates impedit saepe facere alias quae modi accusantium! Sit nulla architecto iure?</p>
     </section>
+</div>
+<div class="homecon">
+    <section class="ContactMe">
+        <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">Contact Me</h2>
+        <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
+    </section>
+    <section class="MyCats">
+        <a href="gallery.html">
+            <img src="images/georgefeeney_02.jpg" 
+                 alt="2 cats looking out window." 
+                 abbr title="Click to meet my cats."; 
+                 width="100%"></a>
+    </section>
+</div>
+
+<div class="homecon">
+  <section class="apidemo">
+  <button onclick="getLocation()">Click for API</button>
+        <p id="demo"></p></section>
 </div>
 <footer>
         Copyright: Meg Geddie
-    </footer>
+</footer>
 </div>
 </body>
 </html>

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="main.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
@@ -35,21 +35,30 @@
 </head>
 <body>
 <div class="container">
+  <div class="pagecontainer">
     <header>
-        <h1 style="font-size: 50px; font-family: Marhey, serif;">&#x1F436;Dog's Best Friend Pet Sitting&#x1F436;</h1>
-        <h2 style="font-size: 40px; font-family: Marhey, serif;">&#128049;Cats Welcome&#128049;</h2>
+        <h1 style="font-size: 100px; font-family: dynapuff, serif;">Happy Tails</h1>
+        <h2 style="font-size: 50px; font-family: Atkinson Hyperlegible Mono, sans-serif;">PET SITTING</h2>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+
+            <li class="dropdown">
+                <a href="calendar.html" class="dropdown">AVAILABILITY</a>
+                <div class="dropdown-content">
+                    <a href="calendar.html">See Availability</a>
+                    <a href="meetandgreet.html">Schedule Meet & Greet</a>
+                </div>
+              </li>
+
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
             <li><a href="FAQs.html">FAQs</a></li>
         </ul>
     </nav>
-    <div class="flexconmeetgreet">
+  <div class="meetgreetcon">
     <p>Select Date: <input type="text" id="leavedatepicker" size="15"></p>
     <h3>Before We Meet and Greet: Tell Me More</h3>
     
@@ -135,9 +144,9 @@
     
 
 </div>
-    <footer>
-        Copyright: Meg Geddie
-    </footer>
+<footer>
+  Copyright: Meg Geddie
+</footer>
 </div>
 </body>
 </html>
