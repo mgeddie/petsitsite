@@ -12,26 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 
-    <script>
-        const x = document.getElementById("demo");
-        
-        function getLocation() {
-          if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(success, error);
-          } else { 
-            x.innerHTML = "Geolocation is not supported by this browser.";
-          }
-        }
-        
-        function success(position) {
-          x.innerHTML = "Latitude: " + position.coords.latitude + 
-          "<br>Longitude: " + position.coords.longitude;
-        }
-        
-        function error() {
-          alert("Sorry, no position available.");
-        }
-    </script>
+    
 
 </head>
 <body>
@@ -87,11 +68,7 @@
     </section>
 </div>
 
-<div class="homecon">
-  <section class="apidemo">
-  <button onclick="getLocation()">Click for API</button>
-        <p id="demo"></p></section>
-</div>
+
 <footer>
         Copyright: Meg Geddie
 </footer>

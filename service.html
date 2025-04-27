@@ -11,6 +11,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+  <script>
+    const x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function success(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    
+    function error() {
+      alert("Sorry, no position available.");
+    }
+</script>
+
 </head>
 <body>
     <div class="pagecontainer">
@@ -37,47 +59,29 @@
             </ul>
         </nav>
     <div class="servicescon">
+        <section class="ServicesIncluded">
+            <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">What's Included:</h2>
+            <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
 
-    <section class="tabledemo"><table style="width:fit-content;"><caption><h3>Pricing</h3></caption>
-            <tr>
-                <th></th>
-                <th>Dogs</th>
-                <th>Cats</th>
-                <th>Other</th>
-            </tr>
-            <tr>
-                <th>Overnight</th>
-                <td>$35</td>
-                <td>$30</td>
-                <td>$25</td>
-            </tr>
-            <tr>
-                <th>30 Min Walk</th>
-                <td>$25</td>
-                <td>Probably Not</td>
-                <td>Probably Not</td>
-            </tr>
-            <tr>
-                <th>30 Min Potty Break/<br>Scoop Litter</br></th>
-                <td>$20</td>
-                <td>$20</td>
-                <td>$15 Cage Clean?</td>
-            </tr>
-            <tr>
-                <th>Feed/Water Only<br>Check in</br></th>
-                <td>$25</td>
-                <td>$20</td>
-                <td>$10</td>
-            </tr>
-            <tr>
-                <th>Medications</th>
-                <td>$10</td>
-                <td>$10</td>
-                <td>$10</td>
-            </tr>
-            </table>
         </section>
+        
+        <section class="ServiceAreaRadius">
+            <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">Service Area:</h2>
+            <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
+        </section>
+
     </div>
+
+    <div class="servicescon">
+        <section class="apidemo">
+        <button onclick="getLocation()">Click for API</button>
+              <p id="demo"></p></section>
+      </div>
+
+
+      
 <footer>
     Copyright: Meg Geddie
 </footer>

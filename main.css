@@ -10,6 +10,7 @@ body {
        justify-content: center;
        align-items: center;
        min-height: 100vh;
+
 }
 .pagecontainer {
        width: 1020px;
@@ -130,44 +131,65 @@ li.dropdown {
        padding: 20px;
        margin: 30px;
 }
-.apidemo {
-       width: 410px;
-       justify-content: center;
-       align-items: center;
-}
+
 img { 
        border-radius: 20px;
 }
 
 .servicescon {
-       width: 1020px;
        display: flex;
        flex-direction: row;
-       align-items: center;
-       justify-content: center;
        flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
 }
-table, th, td {
-       border: 3px solid rgba(76, 16, 131, 1.0);
-       border-collapse: collapse;
-}
-th, td {
-       padding-top: 10px;
-       padding-bottom: 20px;
-       padding-left: 30px;
-       padding-right: 40px;
-}
-tr:hover {
-       background-color: #c8e688;
+.ServicesIncluded{
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
 }
 
-.calendarcon{
-       width: 1020px;
+
+.ServiceAreaRadius {
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
+}
+
+
+
+
+.apidemo {
+       width: 410px;
+       justify-content: center;
+       align-items: center;
+}
+
+.availabilitycon{
        display: flex;
        flex-direction: row;
-       align-items: center;
-       justify-content: center;
        flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+}
+.Calendar{
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
+}
+
+.MeetandGreet{
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
 }
 
 .meetgreetcon{
@@ -264,73 +286,61 @@ input[type=button], input[type=submit], input[type=reset] {
        gap: 20px;
        padding-top: 20px;
 }
-#draggable { 
-       height: 250px;
-       background-color: rgba(255, 255, 255, 0.5);
-       border-radius: 10px;
-       padding: 20px 20px 100px 20px;
-       text-align: center;
-}
+
 
 .raterevcon {
-       width: 1020px;
        display: flex;
        flex-direction: row;
-       align-items: center;
-       justify-content: center;
        flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
 }
 
+.ReviewForm{
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
+}
+.HappyPet1{
+       width: 410px;
+       border-radius: 20px;
+
+}
+.HappyPet2{
+       width: 410px;
+       border-radius: 20px;
+
+}
+
+.SeeReviews{
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
+}
 .faqscon {
        display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
+       flex-direction: row;
        flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
 }
-.hidedemo{
-       width: 380px;
-       height: 100%;
+.FAQs{
+       width: 410px;
+       background-color: rgb(255, 255, 255, 0.25);
        border-radius: 20px;
-       clear: both;
-       margin: 10px 30px 20px 0px;
-       padding: 10px;
-       background-color: rgba(255, 255, 255, 0.5);
-       text-align: center;
-       font-size: 50px
+       padding: 20px;
+       margin: 30px;
 }
-p.hidden1{display: none;}
-p.hidden2{visibility: hidden;}
-
-.javademo{
-       width: 380px;
-       height: 100%;
-       background-color: rgba(255, 255, 255, 0.5);
+.HappyPet3{
+       width: 410px;
        border-radius: 20px;
-       float: left;
-       margin: 20px 30px 20px 0px;
-       padding: 30px;
-       clear: both;
-       text-align: center;
-}
-.iframedemo{
-       width: fit-content;
-       height: 100%;
-       background-color: rgba(255, 255, 255, 0.5);
-       border-radius: 20px;
-       float: left;
-       margin: 20px 30px 20px 0px;
-       padding: 30px;
-       clear: both;
-}
+       padding: 20px;
 
-#sounddemo{
-       width: 300px; 
-       background-color: rgba(255, 255, 255, 0.5); 
-       padding: 10px;
-       border-radius: 10px;
 }
-
 footer{
        width: 1020px;
        clear: both;
@@ -345,7 +355,8 @@ footer{
               background-size: cover; 
               background-repeat: no-repeat;
               justify-content: center;
-              align-items: center;}
+              align-items: center;
+              background-attachment: fixed;}
        .pagecontainer {
               display: flex;
               flex-wrap: wrap;
