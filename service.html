@@ -13,75 +13,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 
   <script>
-    const x = document.getElementById("demo");
-    
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success, error);
-      } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
     }
-    
-    function success(position) {
-      x.innerHTML = "Latitude: " + position.coords.latitude + 
-      "<br>Longitude: " + position.coords.longitude;
-    }
-    
-    function error() {
-      alert("Sorry, no position available.");
-    }
-</script>
+  </script>
 
 </head>
 <body>
     <div class="pagecontainer">
-        <header>
+      <header>
             <h1 style="font-size: 100px; font-family: dynapuff, serif;">Happy Tails</h1>
             <h2 style="font-size: 50px; font-family: Atkinson Hyperlegible Mono, sans-serif;">PET SITTING</h2>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-    
-                <li class="dropdown">
-                    <a href="calendar.html" class="dropdown">AVAILABILITY</a>
-                    <div class="dropdown-content">
-                        <a href="calendar.html">See Availability</a>
-                        <a href="meetandgreet.html">Schedule Meet & Greet</a>
-                    </div>
-                  </li>
-    
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="reviews.html">REVIEWS</a></li>
-                <li><a href="FAQs.html">FAQs</a></li>
-            </ul>
-        </nav>
+      </header>
+
+      <div class="topnav" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="service.html">SERVICES</a>
+            <a href="calendar.html">AVAILABILITY</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="reviews.html">REVIEWS</a>
+            <a href="FAQs.html">FAQs</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+      </div>
+
     <div class="servicescon">
         <section class="ServicesIncluded">
             <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">What's Included:</h2>
             <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
-
+              I offer overnight stays in your home with your pet(s). I charge $35 per dog per night and $25 per cat per night. Any additional caged/tanked pets are free of charge. I follow whatever your pets' normal routines are.
+               <ul style="font-family: 'Atkinson Hyperlegible Mono, sans-serif';">
+                <li>Feeding and Water</li>
+                <li>Waste Scoops</li>
+                <li>Administer medications if applicable</li>
+                <li>Walks/Play</li>
+                <li>Check Mail/Water Plants/Trash</li>
+                <li>Regular photo/video updates</li>
+              </ul>
         </section>
-        
-        <section class="ServiceAreaRadius">
-            <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">Service Area:</h2>
-            <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
+        <section class="treat">
+          <img src="images/pexels-lucasandrade-5033015.jpg" 
+          alt="Treat in the shape of a paw print." 
+          abbr title="Photo by Lucas Andrade on Pexels"; 
+          width="100%">
         </section>
-
     </div>
-
     <div class="servicescon">
-        <section class="apidemo">
-        <button onclick="getLocation()">Click for API</button>
-              <p id="demo"></p></section>
-      </div>
-
-
-      
+        <section class="kittyscritches">
+          <img src="images/pexels-rdne-7516101.jpg"
+            alt="Petting cat." 
+            abbr title="Photo by RDNE Stock project on Pexels"; 
+            width="100%">
+        </section>
+        <section class="ServiceAreaRadius">
+          <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">Service Area:</h2>
+          <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
+        </section>
+    </div>   
 <footer>
     Copyright: Meg Geddie
 </footer>

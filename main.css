@@ -51,64 +51,35 @@ h3 {
        text-align: left;
 }
 
-ul {
-       list-style-type: none; 
-       width: 1020px;
-       margin: 0; 
-       padding: 0px;
+.topnav {
        overflow: hidden;
-       background-color: rgba(255, 255, 255, 0.25);
-       border-radius: 5px;}
-li {
-       display: inline-block;
-}
-a {
-       text-decoration: none;
-}
-li a {
-       display: inline-block;
+       background-color: rgba(255, 255, 255, 0.2);
+       border-radius: 10px;
+     }  
+     .topnav a {
+       float: left;
+       display: block;
+       color: #4A6160;
        text-align: center;
-       color: #615D4A;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
        font-family: "Atkinson Hyperlegible Mono", sans-serif;
-       padding: 14px 16px 14px 16px;
-}
-li a:hover{
-       background-color: rgb(139, 122, 136, 0.5);
-       font-size: large;
-}
-.active{
+     }
+     
+     .topnav a:hover {
        background-color: #E0CF79;
-}
-a:active {
-       color: #E179CB
-}
-a:visited {
-       color:#4A6160
-}
-li.dropdown {
-       display: inline-block;
-}
-.dropdown-content {
+       color:#8B7A88;
+     }
+     
+     .topnav a.active {
+       background-color: #4A6160;
+       color: #79E0DD;
+     }    
+     .topnav .icon {
        display: none;
-       position: absolute;
-       background-color: rgba(255, 255, 255, 0.25);
-       min-width: 150px;
-       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-       z-index: 1;
-}
-.dropdown-content a {
-       color: #615D4A;
-       padding: 12px 16px;
-       text-decoration: none;
-       text-align: center;
-       display: block;
-}    
-.dropdown:hover .dropdown-content {
-       display: block;
-}
-.dropdown-content a:hover {
-       background-color: rgb(139, 122, 136, 0.25);
-}   
+     }
+  
 
 .homecon {
        display: flex;
@@ -124,7 +95,12 @@ li.dropdown {
        padding: 20px;
        margin: 30px;
 }
-
+.Lady {
+       width: 410px;
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
+}
 .contact-form-container {
         width: 410px;
         margin: 30px;
@@ -136,8 +112,7 @@ li.dropdown {
 .contact-form h2 {
         color: #4A6160;
         font-family: dynapuff, serif;
-       }
-     
+       }     
 .contact-form label {
         display: block;
         margin-bottom: 8px;
@@ -153,17 +128,19 @@ li.dropdown {
         border-radius: 5px;
        }
 .contact-form input[type="submit"] {
-        background-color: #4A6160;
-        color: #79E0DD;
+        background-color:#4A6160;
+        color:#79E0DD;
         padding: 10px 20px;
-        border: none;
+        border:none;
         border-radius: 5px;
         cursor: pointer;
         font-family: Atkinson Hyperlegible Mono, sans-serif;
        }
 .contact-form input[type="submit"]:hover {
-        background-color: #8B7A88;
+        background-color: #E0CF79;
+        color:#4A6160;
        }
+
 img { 
        border-radius: 20px;
 }
@@ -182,23 +159,24 @@ img {
        padding: 20px;
        margin: 30px;
 }
-
-
+.treat {
+       width: 410px;
+       border-radius: 20px;
+       padding: 10px;
+       margin: 30px;
+}
+.kittyscritches {
+       width: 410px;
+       border-radius: 20px;
+       padding: 10px;
+       margin: 30px;
+}
 .ServiceAreaRadius {
        width: 410px;
        background-color: rgb(255, 255, 255, 0.25);
        border-radius: 20px;
        padding: 20px;
        margin: 30px;
-}
-
-
-
-
-.apidemo {
-       width: 410px;
-       justify-content: center;
-       align-items: center;
 }
 
 .availabilitycon{
@@ -224,91 +202,6 @@ img {
        margin: 30px;
 }
 
-.meetgreetcon{
-       width: 1020px;
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       flex-wrap: wrap;
-}
-#lform{
-       width: 400px; 
-       background-color: rgba(255, 255, 255, 0.5); 
-       padding: 10px;
-       margin: 10px;
-       border-radius: 10px;
-       float: left;
-}
-#rform{
-       width: 400px; 
-       background-color: rgba(255, 255, 255, 0.5); 
-       padding: 10px;
-       margin: 10px;
-       border-radius: 10px;
-       float: right;
-}
-input[type=text]{
-       width: 100%;
-       padding: 5px;
-       margin: 5px;
-       box-sizing: border-box;
-       border: none;
-       border-radius: 5px;
-       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-       background-color: rgba(76, 16, 131, 0.10);
-       color: rgb(0, 0, 0);
-}
-input[type=text]:focus {
-       background-color: rgb(173, 230, 212);
-     }
-input[type=email]{
-       width: 100%;
-       padding: 5px;
-       margin: 5px;
-       box-sizing: border-box;
-       border: none;
-       border-radius: 5px;
-       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-       background-color: rgba(76, 16, 131, 0.10);
-       color: rgb(0, 0, 0);
-}
-input[type=email]:focus {
-       background-color: rgb(173, 230, 212);
-     }
-textarea{
-       padding: 5px;
-       width: 100%;
-       border: none;
-       border-radius: 5px;
-       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-       background-color: rgba(76, 16, 131, 0.10);
-       color: rgb(0, 0, 0);
-       resize: none;
- }
-<!--Not sure why this doesn't work?-->
-input[type=textarea]:focus {
-       background-color: rgb(173, 230, 212);
-     }
-select {
-       width: 100%;
-       padding: 5px;
-       border: none;
-       border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-       border-radius: 5px;
-       background-color: rgba(75, 16, 131, 0.15)
-     }
-input[type=button], input[type=submit], input[type=reset] {
-       background-color: rgba(75, 16, 131, 0.25);
-       border: none;
-       border-radius: 5px;
-       color: rgba(75, 16, 131, 1.0);
-       padding: 15px 30px;
-       text-decoration: none;
-       margin: 5px;
-       cursor: pointer;
-     }
-
 .gallerycon { 
        display: flex;
        flex-direction: row;
@@ -318,8 +211,6 @@ input[type=button], input[type=submit], input[type=reset] {
        gap: 20px;
        padding-top: 20px;
 }
-
-
 .raterevcon {
        display: flex;
        flex-direction: row;
@@ -327,7 +218,6 @@ input[type=button], input[type=submit], input[type=reset] {
        justify-content: center;
        align-items: center;
 }
-
 .ReviewForm{
        width: 410px;
        background-color: rgb(255, 255, 255, 0.25);
@@ -338,14 +228,15 @@ input[type=button], input[type=submit], input[type=reset] {
 .HappyPet1{
        width: 410px;
        border-radius: 20px;
+       padding: 10px;
 
 }
 .HappyPet2{
        width: 410px;
        border-radius: 20px;
+       padding: 10px;
 
 }
-
 .SeeReviews{
        width: 410px;
        background-color: rgb(255, 255, 255, 0.25);
@@ -381,7 +272,7 @@ footer{
        text-align: center;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
        body{
               background-image: linear-gradient( hsl(50, 62%, 68%, .5),#8B7A88);
               background-size: cover; 
@@ -400,30 +291,15 @@ footer{
               flex-direction: column;
               flex-wrap: wrap;
        }
-       .AboutMe {
+       .servicescon {
               display: flex;
               flex-direction: column;
-              align-items: center;
-              justify-content: center;
+              flex-wrap: wrap;
        }
-       .Lady {
+       .availabilitycon {
               display: flex;
               flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              padding-top: 20px;
-       }
-       .ContactMe {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-       }
-       .MyCats {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
+              flex-wrap: wrap;
        }
        .gallerycon { 
        display: flex;
@@ -431,13 +307,14 @@ footer{
        align-items: center;
        justify-content: center;
 } 
-
-          
-}
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 992px) {
-
+       .raterevcon {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+       } 
+       .faqscon {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+       }    
 }

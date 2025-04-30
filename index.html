@@ -12,7 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
 
 </head>
 <body>
@@ -21,24 +30,18 @@
         <h1 style="font-size: 100px; font-family: dynapuff, serif;">Happy Tails</h1>
         <h2 style="font-size: 50px; font-family: Atkinson Hyperlegible Mono, sans-serif;">PET SITTING</h2>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="service.html">SERVICES</a></li>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">HOME</a>
+        <a href="service.html">SERVICES</a>
+        <a href="calendar.html">AVAILABILITY</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="reviews.html">REVIEWS</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
 
-            <li class="dropdown">
-                <a href="calendar.html" class="dropdown">AVAILABILITY</a>
-                <div class="dropdown-content">
-                    <a href="calendar.html">See Availability</a>
-                    <a href="meetandgreet.html">Schedule Meet & Greet</a>
-                </div>
-              </li>
-
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="reviews.html">REVIEWS</a></li>
-            <li><a href="FAQs.html">FAQs</a></li>
-        </ul>
-    </nav>
 <div class="homecon">
     <section class="Lady">
         <img src="images/petsitsiteladyandme_02.jpg" 
@@ -73,24 +76,13 @@
         </form>
     </div>
     <section class="MyCats">
-        <a href="gallery.html">
+        <a href="https://en.wikipedia.org/wiki/William_Daniels">
             <img src="images/georgefeeney_02.jpg" 
                  alt="2 cats looking out window." 
-                 abbr title="Click to meet my cats."; 
+                 abbr title="Click to meet my cats, George and Mr. Feeny."; 
                  width="100%"></a>
     </section>
-
-
-
-        
-
-
-
-
-
 </div>
-
-
 <footer>
         Copyright: Meg Geddie
 </footer>
