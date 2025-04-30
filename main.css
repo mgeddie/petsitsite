@@ -124,14 +124,46 @@ li.dropdown {
        padding: 20px;
        margin: 30px;
 }
-.ContactMe {
-       width: 410px;
-       background-color: rgb(255, 255, 255, 0.25);
-       border-radius: 20px;
-       padding: 20px;
-       margin: 30px;
-}
 
+.contact-form-container {
+        width: 410px;
+        margin: 30px;
+        padding: 20px;
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 20px;
+        box-shadow: 0 5 5 0px rgba(0, 0, 0, 0.1);
+       }
+.contact-form h2 {
+        color: #4A6160;
+        font-family: dynapuff, serif;
+       }
+     
+.contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        color: #615D4A;
+        font-family: Atkinson Hyperlegible Mono, sans-serif;
+       }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+       }
+.contact-form input[type="submit"] {
+        background-color: #4A6160;
+        color: #79E0DD;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Atkinson Hyperlegible Mono, sans-serif;
+       }
+.contact-form input[type="submit"]:hover {
+        background-color: #8B7A88;
+       }
 img { 
        border-radius: 20px;
 }

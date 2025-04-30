@@ -54,11 +54,24 @@
     </section>
 </div>
 <div class="homecon">
-    <section class="ContactMe">
-        <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">Contact Me</h2>
-        <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque praesentium neque ex eum, id inventore iure, molestias eveniet sapiente perspiciatis qui officiis libero nisi explicabo, quis placeat cumque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita saepe dolores incidunt hic sed illo eligendi rem repellendus repellat nobis. Corporis, doloribus consequuntur quod eum voluptatem nemo vitae necessitatibus!</p>
-    </section>
+    <div class="contact-form-container">
+        <form action="/submit_form" method="post" class="contact-form">
+        <h2>Contact Me</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+       
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+       
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+       
+        <input type="submit" value="Send">
+        </form>
+    </div>
     <section class="MyCats">
         <a href="gallery.html">
             <img src="images/georgefeeney_02.jpg" 
@@ -66,6 +79,15 @@
                  abbr title="Click to meet my cats."; 
                  width="100%"></a>
     </section>
+
+
+
+        
+
+
+
+
+
 </div>
 
 
