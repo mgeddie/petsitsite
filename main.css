@@ -79,7 +79,6 @@ h3 {
      .topnav .icon {
        display: none;
      }
-  
 
 .homecon {
        display: flex;
@@ -107,7 +106,7 @@ h3 {
         padding: 20px;
         background-color: rgb(255, 255, 255, 0.25);
         border-radius: 20px;
-        box-shadow: 0 5 5 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
        }
 .contact-form h2 {
         color: #4A6160;
@@ -126,6 +125,7 @@ h3 {
         padding: 10px;
         margin-bottom: 20px;
         border-radius: 5px;
+        border: 1px solid #8B7A88;
        }
 .contact-form input[type="submit"] {
         background-color:#4A6160;
@@ -211,6 +211,7 @@ img {
        gap: 20px;
        padding-top: 20px;
 }
+
 .raterevcon {
        display: flex;
        flex-direction: row;
@@ -218,12 +219,64 @@ img {
        justify-content: center;
        align-items: center;
 }
-.ReviewForm{
+.ReviewForm {
        width: 410px;
+       margin: 30px;
+       padding: 20px;
        background-color: rgb(255, 255, 255, 0.25);
        border-radius: 20px;
-       padding: 20px;
-       margin: 30px;
+       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.rating-form h2 {
+ text-align: center;
+ color:#615D4A;
+}
+.stars {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+.stars input[type="radio"] {
+ display: none;
+}
+.stars label {
+ font-size: 30px;
+ color:#8B7A88;
+ cursor: pointer;
+}
+.stars input[type="radio"]:checked ~ label {
+ color:#E0CF79;
+}
+.submit-btn {
+ display: block;
+ width: 100%;
+ padding: 10px;
+ background-color:#4A6160;
+ border: none;
+ border-radius: 5px;
+ font-size: 16px;
+ font-family: 'Atkinson Hyperlegible Mono, sans-serif';
+ color:#79E0DD;;
+ cursor: pointer;
+}
+.rating-form input[type="submit"]:hover {
+       background-color: #E0CF79;
+       color:#4A6160;
+}
+.comment-section {
+ margin-top: 20px;
+}
+.comment-section label {
+ display: block;
+ margin-bottom: 8px;
+ color:#615D4A;
+ font-family: 'Atkinson Hyperlegible Mono, sans-serif';
+}
+.comment-section textarea {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #8B7A88;
+ border-radius: 5px;
 }
 .HappyPet1{
        width: 410px;
@@ -244,6 +297,7 @@ img {
        padding: 20px;
        margin: 30px;
 }
+
 .faqscon {
        display: flex;
        flex-direction: row;
