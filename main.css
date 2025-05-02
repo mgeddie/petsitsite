@@ -340,6 +340,11 @@ footer{
               flex-direction: column;
               justify-content: center;
        }
+       .topnav {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+       }
        .homecon {
               display: flex;
               flex-direction: column;
