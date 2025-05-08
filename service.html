@@ -23,6 +23,19 @@
     }
   </script>
 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
+
+
+</head>
 </head>
 <body>
     <div class="pagecontainer">
@@ -41,21 +54,58 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
       </div>
-
+    <div class="servicescon">
+      <section class="commercial">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/htov9RUbPvQ?si=kFE-5FDeqIErePUz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    </div>
     <div class="servicescon">
         <section class="ServicesIncluded">
             <h2 style="font-size: 25px; font-family: dynapuff, serif; color: #4A6160;">What's Included:</h2>
             <p style="color: #615D4A; font-size: 15px; font-family: Atkinson Hyperlegible Mono, sans-serif;">
-              I offer overnight stays in your home with your pet(s). I charge $35 per dog per night and $25 per cat per night. Any additional caged/tanked pets are free of charge. I follow whatever your pets' normal routines are.
-               <ul style="font-family: 'Atkinson Hyperlegible Mono, sans-serif';">
-                <li>Feeding and Water</li>
-                <li>Waste Scoops</li>
-                <li>Administer medications if applicable</li>
-                <li>Walks/Play</li>
-                <li>Check Mail/Water Plants/Trash</li>
-                <li>Regular photo/video updates</li>
-              </ul>
-        </section>
+              I offer overnight stays in your home with your pet(s) to follow whatever your pets' normal routines are.</p>
+
+              <div id="tabs">
+                <ul>
+                  <li style="font-size: 20px; font-family: dynapuff, serif; color: #8B7A88;"><a href="#tabs-1">Dogs</a></li>
+                  <li style="font-size: 20px; font-family: dynapuff, serif; color: #8B7A88;"><a href="#tabs-2"> Cats</a></li>
+                  <li style="font-size: 20px; font-family: dynapuff, serif; color: #8B7A88;"><a href="#tabs-3"> Caged/Tanked</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p>$35 per dog per night</p>
+                  <ul style="font-family: 'Atkinson Hyperlegible Mono, sans-serif';">
+                    <li>Feeding and Water</li>
+                    <li>Waste Scoops</li>
+                    <li>Administer medications if applicable</li>
+                    <li>Walks/Play</li>
+                    <li>Check Mail/Water Plants/Trash</li>
+                    <li>Regular photo/video updates</li>
+                  </ul>
+                </div>
+                <div id="tabs-2">
+                  <p>$30 per cat per night</p>
+                  <ul style="font-family: 'Atkinson Hyperlegible Mono, sans-serif';">
+                    <li>Feeding and Water</li>
+                    <li>Waste Scoops</li>
+                    <li>Administer medications if applicable</li>
+                    <li>Walks/Play</li>
+                    <li>Check Mail/Water Plants/Trash</li>
+                    <li>Regular photo/video updates</li>
+                  </ul>
+                </div>
+                <div id="tabs-3">
+                  <p>$15 per tank or cage per night</p>
+                  <ul style="font-family: 'Atkinson Hyperlegible Mono, sans-serif';">
+                    <li>Feeding and Water</li>
+                    <li>Waste Scoops</li>
+                    <li>Administer medications if applicable</li>
+                    <li>Check Mail/Water Plants/Trash</li>
+                    <li>Regular photo/video updates</li>
+                  </ul>
+                </div>
+              </div>
+        
+            </section>
         <section class="treat">
           <img src="images/pexels-lucasandrade-5033015.jpg" 
           alt="Treat in the shape of a paw print." 

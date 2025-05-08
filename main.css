@@ -17,6 +17,7 @@ body {
        margin: 0 auto;
        display: flex;
        flex-wrap: wrap;
+       text-align: center;
 }
 .dynapuff-googlefontmain {
        font-family: "DynaPuff", system-ui;
@@ -55,6 +56,10 @@ h3 {
        overflow: hidden;
        background-color: rgba(255, 255, 255, 0.2);
        border-radius: 10px;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
      }  
      .topnav a {
        float: left;
@@ -151,7 +156,19 @@ img {
        flex-wrap: wrap;
        justify-content: center;
        align-items: center;
+       width: 100%;
+}   
+.commercial {
+       width: auto;
+       background-color: rgb(255, 255, 255, 0.25);
+       border-radius: 20px;
+       padding: 20px;
+       margin: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
 }
+
 .ServicesIncluded{
        width: 410px;
        background-color: rgb(255, 255, 255, 0.25);
@@ -187,13 +204,12 @@ img {
        align-items: center;
 }
 .Calendar{
-       width: 410px;
+       width: auto;
        background-color: rgb(255, 255, 255, 0.25);
        border-radius: 20px;
        padding: 20px;
        margin: 30px;
 }
-
 .MeetandGreet{
        width: 410px;
        background-color: rgb(255, 255, 255, 0.25);
