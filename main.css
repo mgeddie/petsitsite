@@ -333,6 +333,7 @@ ul {
        flex-wrap: wrap;
        justify-content: center;
        align-items: center;
+       text-align: left;
 }
 .FAQs{
        width: 410px;
@@ -341,6 +342,7 @@ ul {
        padding: 20px;
        margin: 30px;
 }
+
 .HappyPet3{
        width: 410px;
        border-radius: 20px;
